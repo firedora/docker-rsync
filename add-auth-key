@@ -1,9 +1,8 @@
 #!/bin/sh
 
 if [ -z "$1" ]; then
-	echo "Usage: add_auth_key AUTH_KEY"
+	echo "Usage: add-auth-key AUTH_KEY"
 	exit 1;
 fi
 
-echo $1 >> /root/.ssh/authorized_keys
-
+echo "$1" >> /root/.ssh/authorized_keys
